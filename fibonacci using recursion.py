@@ -1,5 +1,3 @@
-def func(n):
-    if n==0 or n==1:
-        return n
-    return func(n-1) + func(n-2)
-print(func(10))
+print('myname is rohit', end=' ')
+print('age is 25', end=' ')
+print('ncefi')
