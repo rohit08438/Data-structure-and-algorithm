@@ -3,7 +3,7 @@ n=len(nums)
 if n==1:
     print(1)
 i=0
-j=1+1
+j=i+1
 while j<n:
     if nums[i]!=nums[j]:
         i+=1
