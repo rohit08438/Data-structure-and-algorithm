@@ -1,10 +1,8 @@
-nums=[5,-2,3,9,0,6,10,7]
+nums=[3,9,5,6,7,2]
+k=int(input("enter k:"))
 n=len(nums)
-nums[:] = [nums[-1]] + nums[0:n-1]
-print(nums)
-
-temp=nums[n-1]
-for i in range(n-2,-1,-1):
-    nums[i+1]=nums[i]
-nums[0]=temp
+rotation=n%k
+for _ in range(0,k):
+    e=nums.pop()
+    nums.insert(0,e)
 print(nums)
